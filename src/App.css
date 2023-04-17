@@ -5,12 +5,10 @@ form {
   font-family: Arial, sans-serif;
   color: #333;
 }
-
 label {
   display: block;
   margin-bottom: 5px;
 }
-
 input[type="text"], input[type="email"], textarea {
   width: 100%;
   padding: 10px;
@@ -21,7 +19,6 @@ input[type="text"], input[type="email"], textarea {
   font-size: 16px;
   font-family: inherit;
 }
-
 button[type="submit"] {
   background-color: #008cba;
   color: #fff;
@@ -34,11 +31,10 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #0077b3;
 }
-
-textarea{
+textarea {
   resize: none;
 }
-.container{
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,7 +43,7 @@ textarea{
   margin: 0 auto;
   background-color: #F2E3DB;
 }
-.container-form{
+.container-form {
   border: 1px solid #13c5d8;
   border-radius: 10px;
   padding: 40px;
@@ -55,7 +51,17 @@ textarea{
   box-shadow: 0 2px 2px rgba(0,0,0,0.1);
   width: 500px;
 }
-.text-center{
+.text-center {
   text-align: center;
   margin-top: 0;
+}
+
+/* Media query cho các kích thước màn hình nhỏ */
+@media screen and (max-width: 767px) {
+  .container-form {
+    width: 50%;
+    padding: 20px;
+    padding-right: 40px;
+
+  }
 }
